@@ -57,9 +57,9 @@ export default function App() {
         }}>CRAP CAM :trol:</Text>
         <Text>Light Sensor:</Text>
         <Text>
-          Illuminance: {Platform.OS === 'android' ? `${illuminance.toFixed(2)} lx - rgba(255, 255, 255, ${(illuminance / 50).toFixed(2)})` : `Only available on Android`}
+          Illuminance: {Platform.OS === 'android' ? `${illuminance.toFixed(2)} lx - rgba(255, 255, 255, ${(illuminance / 100).toFixed(2)})` : `Only available on Android`}
         </Text>
-        <View style={{ backgroundColor: `rgba(255, 255, 255, ${(illuminance / 50).toFixed(2)})`, width: 100, height: 100 }} />
+        <View style={{ backgroundColor: `rgba(255, 255, 255, ${(illuminance / 100).toFixed(2)})`, width: 100, height: 100 }} />
         <Camera style={styles.camera} type={type}>
           <View style={styles.buttonContainer}>
             <Image
